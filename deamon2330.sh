@@ -4,7 +4,7 @@
 # ==============================================================
 
 # Variables
-CPU_LIMIT=2330      
+CPU_LIMIT=1150
 DAEMON_INTERVAL=3  	
 BLACK_PROCESSES_LIST=   
 WHITE_PROCESSES_LIST=  
