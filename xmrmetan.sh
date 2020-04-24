@@ -1,12 +1,4 @@
-#!/bin/bash 
-if [ "$(id -u)" != "0" ]; then
-   sudo su   
-else
-	echo "Root user"
-fi
-sudo -i
-name=xmrmetan;
-screen -S $name
+#!/bin/bash
 sudo apt-get update
 VERSION=5.11.1
 azure=mxsemsdnlkdj
